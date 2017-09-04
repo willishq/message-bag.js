@@ -30,6 +30,10 @@ class MessageBag {
     clear(bag) {
         this._items = this._items.filter(item => item.bag !== bag);
     }
+
+    clearAll() {
+        this._items = [];
+    }
 }
 
 export default MessageBag;
